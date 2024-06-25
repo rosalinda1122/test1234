@@ -7,13 +7,14 @@ let isChangingColor = false;
 
 function changeBackgroundColor() {
     document.body.style.backgroundColor = getRandomHexColor();
-    setTimeout(changeBackgroundColor, 1000);
+    const timer = setInterval(changeBackgroundColor, 1000);
 }
 startButton.addEventListener('click', () => {
     isChangingColor = true;
-    changeBackgroundColor ();
-
+    changeBackgroundColor ()
 });
 
-stopButton.addEventListener('click', () =>{    
-});
+stopButton.addEventListener('click', () =>{ 
+    function stopColor() {
+        clearInterval(timer);
+}});
