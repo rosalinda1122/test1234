@@ -1,2 +1,0 @@
-function getRandomHexColor(){return"#".concat(Math.floor(16777215*Math.random()).toString(16))}var startButton=document.querySelector("[data-start]"),stopButton=document.querySelector("[data-stop]"),isChangingColor=!1;function changeBackgroundColor(){document.body.style.backgroundColor=getRandomHexColor(),setTimeout(changeBackgroundColor,1e3)}startButton.addEventListener("click",(function(){isChangingColor=!0,changeBackgroundColor()})),stopButton.addEventListener("click",(function(){}));
-//# sourceMappingURL=index.7e0e459a.js.map
